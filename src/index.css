@@ -1,0 +1,118 @@
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #412a7a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  h1 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+  }
+  .main-container {
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 190px;
+  }
+  
+  .form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .form-control input:focus,
+  .form-control input:valid {
+    outline: 0;
+    border-bottom-color: #c3ade6;
+  }
+  
+  .form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: #fff;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .form-control input:focus+label span,
+  .form-control input:valid+label span {
+    color: #c3ade6;
+    transform: translateY(-30px);
+  }
+  .btn-donate {
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: rgb(121, 97, 255);
+    --btn-bg-2: rgb(80, 31, 255);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: var(--size, 1rem);
+    font-family: "Segoe UI", system-ui, sans-serif;
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    box-shadow: 0px 0px 20px #b547ff80, 0px 5px 5px -1px #4c3ae940, inset 4px 4px 8px rgba(176, 175, 255, 0.5), inset -4px -4px 8px rgba(95, 19, 216, 0.35);
+  }
+  
+  .btn-donate:hover {
+    background-position: right top;
+  }
+  
+  .btn-donate:is(:focus, :focus-visible, :active) {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .btn-donate {
+      transition: linear;
+    }
+  }
+
+  li {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  
